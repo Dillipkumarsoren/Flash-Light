@@ -1,0 +1,919 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="About Flash Light application developed by Dillip Kumar Soren. Learn about the app, its features, purpose and developer.">
+
+    <meta name="robots" content="index, follow">
+
+    <title>Flash Light - About Us</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #202124;
+            line-height: 1.75;
+        }
+
+        header {
+            background: linear-gradient(135deg, #111827, #2563eb);
+            color: #fff;
+            text-align: center;
+            padding: 75px 20px;
+        }
+
+        .app-icon {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 20px;
+            border-radius: 24px;
+            background: rgba(255,255,255,0.16);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 17px;
+            opacity: 0.93;
+        }
+
+        .container {
+            width: min(1000px, calc(100% - 30px));
+            margin: 35px auto;
+        }
+
+        .card {
+            background: #fff;
+            padding: 32px;
+            margin-bottom: 22px;
+            border-radius: 16px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.06);
+        }
+
+        .card h2 {
+            color: #1d4ed8;
+            font-size: 24px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .card h3 {
+            color: #374151;
+            font-size: 18px;
+            margin-top: 22px;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            margin-bottom: 14px;
+        }
+
+        ul {
+            padding-left: 25px;
+            margin: 12px 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .hero-box {
+            background: linear-gradient(135deg, #eff6ff, #f8fafc);
+            border: 1px solid #dbeafe;
+            padding: 25px;
+            border-radius: 14px;
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            background: #eff6ff;
+            border-left: 5px solid #2563eb;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 18px 0;
+        }
+
+        .success-box {
+            background: #f0fdf4;
+            border-left: 5px solid #16a34a;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 18px 0;
+        }
+
+        .warning-box {
+            background: #fff7ed;
+            border-left: 5px solid #f97316;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 18px 0;
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 18px;
+        }
+
+        .detail {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            padding: 18px;
+            border-radius: 10px;
+        }
+
+        .detail strong {
+            display: block;
+            color: #111827;
+            margin-bottom: 5px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .feature {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .feature-icon {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .feature h3 {
+            margin-top: 0;
+            color: #1d4ed8;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #111827;
+            color: #d1d5db;
+            text-align: center;
+            padding: 38px 20px;
+            margin-top: 50px;
+        }
+
+        footer strong {
+            color: #fff;
+        }
+
+        .top-btn {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 46px;
+            height: 46px;
+            border: none;
+            border-radius: 50%;
+            background: #2563eb;
+            color: #fff;
+            font-size: 21px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            display: none;
+        }
+
+        .top-btn:hover {
+            background: #1d4ed8;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 55px 18px;
+            }
+
+            header h1 {
+                font-size: 31px;
+            }
+
+            .card {
+                padding: 22px;
+            }
+
+            .card h2 {
+                font-size: 21px;
+            }
+
+            .details,
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+<header>
+
+    <div class="app-icon">🔦</div>
+
+    <h1>Flash Light</h1>
+
+    <p>About Us</p>
+
+    <p>Simple. Useful. Convenient.</p>
+
+</header>
+
+
+<main class="container">
+
+
+    <!-- About Application -->
+
+    <section class="card">
+
+        <h2>1. About Flash Light</h2>
+
+        <div class="hero-box">
+
+            <h3>Welcome to Flash Light</h3>
+
+            <p>
+                Flash Light is a simple and convenient flashlight utility
+                application developed to provide users with quick access
+                to the flashlight functionality available on compatible
+                Android devices.
+            </p>
+
+            <p>
+                Our goal is to provide a clean, easy-to-use and practical
+                flashlight experience without requiring users to create
+                an account or complete a complicated registration process.
+            </p>
+
+        </div>
+
+        <p>
+            The application is designed with simplicity in mind. Users can
+            access the flashlight functionality directly from the app and,
+            where supported by their device, use additional flashlight
+            controls.
+        </p>
+
+        <p>
+            Flash Light is intended to be useful in everyday situations
+            where additional light may be needed, such as finding objects
+            in dark areas, navigating low-light environments or using the
+            phone as a basic torch.
+        </p>
+
+    </section>
+
+
+    <!-- Our Mission -->
+
+    <section class="card">
+
+        <h2>2. Our Mission</h2>
+
+        <p>
+            Our mission is to create simple mobile utility applications
+            that are easy to understand and convenient to use.
+        </p>
+
+        <p>
+            We believe that everyday utility applications should have a
+            straightforward interface, useful functionality and a
+            user-friendly experience.
+        </p>
+
+        <p>
+            With Flash Light, our focus is on providing a practical
+            flashlight solution while keeping the application simple
+            and accessible.
+        </p>
+
+        <div class="success-box">
+
+            <strong>Our Focus:</strong>
+
+            <p>
+                Simplicity, convenience, usability, performance and
+                continuous improvement.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- App Features -->
+
+    <section class="card">
+
+        <h2>3. Flash Light Features</h2>
+
+        <p>
+            Flash Light may provide the following features depending on
+            device compatibility and available hardware capabilities.
+        </p>
+
+        <div class="feature-grid">
+
+            <div class="feature">
+
+                <div class="feature-icon">🔦</div>
+
+                <h3>Flashlight Control</h3>
+
+                <p>
+                    Quickly turn the compatible device flashlight on or
+                    off using the application.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">☀️</div>
+
+                <h3>Brightness Control</h3>
+
+                <p>
+                    On supported devices, users may be able to adjust
+                    flashlight brightness.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">⚡</div>
+
+                <h3>Quick Access</h3>
+
+                <p>
+                    Designed to provide convenient access to the device's
+                    flashlight functionality.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">📱</div>
+
+                <h3>Simple Interface</h3>
+
+                <p>
+                    A straightforward interface designed to make the
+                    flashlight easy to operate.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- User Experience -->
+
+    <section class="card">
+
+        <h2>4. Our Approach to User Experience</h2>
+
+        <p>
+            We aim to keep Flash Light simple so that users can understand
+            its primary functions without unnecessary complexity.
+        </p>
+
+        <p>
+            We consider ease of use, readability, accessibility and
+            practical functionality when improving the application.
+        </p>
+
+        <p>
+            We may introduce improvements and new features in future
+            versions based on technical requirements and user feedback.
+        </p>
+
+    </section>
+
+
+    <!-- No Login -->
+
+    <section class="card">
+
+        <h2>5. No Login Required</h2>
+
+        <p>
+            Flash Light does not require users to create an account or
+            log in before using the application.
+        </p>
+
+        <p>
+            Our objective is to allow users to access the basic flashlight
+            functionality without unnecessary registration requirements.
+        </p>
+
+        <div class="info-box">
+
+            <strong>No Account System:</strong>
+
+            <p>
+                Flash Light does not provide a traditional user account,
+                login or registration system.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Privacy -->
+
+    <section class="card">
+
+        <h2>6. Privacy and Transparency</h2>
+
+        <p>
+            We respect the privacy of our users and aim to be transparent
+            about how the application operates.
+        </p>
+
+        <p>
+            Flash Light does not require users to directly provide
+            information such as a name, password, bank details or
+            government identification to use its basic functionality.
+        </p>
+
+        <p>
+            The application may use third-party services such as Google
+            AdMob for advertising. Information that may be processed by
+            such third-party services is governed by their respective
+            policies.
+        </p>
+
+        <p>
+            For complete information about data handling, permissions and
+            advertising services, please review our Privacy Policy.
+        </p>
+
+    </section>
+
+
+    <!-- Advertising -->
+
+    <section class="card">
+
+        <h2>7. Advertising</h2>
+
+        <p>
+            Flash Light may display advertisements through
+            <strong>Google AdMob</strong>.
+        </p>
+
+        <p>
+            Advertising helps support the development, maintenance and
+            improvement of the application.
+        </p>
+
+        <p>
+            Advertisements are provided by third-party advertising systems.
+            The developer does not control every advertisement that may
+            be displayed to an individual user.
+        </p>
+
+        <div class="info-box">
+
+            <strong>Google AdMob:</strong>
+
+            <p>
+                Google advertising services may process certain technical
+                and advertising-related information according to Google's
+                applicable policies.
+            </p>
+
+            <a href="https://policies.google.com/privacy"
+               target="_blank"
+               rel="noopener noreferrer">
+                Google Privacy Policy
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Device Compatibility -->
+
+    <section class="card">
+
+        <h2>8. Device Compatibility</h2>
+
+        <p>
+            Flash Light depends on the flashlight hardware and Android
+            software available on the user's device.
+        </p>
+
+        <p>
+            Android smartphones and tablets can have different hardware,
+            operating-system versions and manufacturer-specific
+            implementations.
+        </p>
+
+        <p>
+            Because of these differences, some flashlight features may
+            work differently or may not be available on certain devices.
+        </p>
+
+        <p>
+            We continuously aim to improve compatibility where technically
+            possible.
+        </p>
+
+    </section>
+
+
+    <!-- Independent Developer -->
+
+    <section class="card">
+
+        <h2>9. Independent Application</h2>
+
+        <p>
+            Flash Light is an independently developed application.
+        </p>
+
+        <div class="warning-box">
+
+            <strong>Government Affiliation Notice:</strong>
+
+            <p>
+                Flash Light is not a government application and is not
+                affiliated with, sponsored by, endorsed by, authorized by
+                or officially connected with any government organization,
+                department or agency.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- No Financial -->
+
+    <section class="card">
+
+        <h2>10. Not a Financial Application</h2>
+
+        <p>
+            Flash Light is a utility application and does not provide
+            banking, investment, loan, insurance, cryptocurrency,
+            payment or other financial services.
+        </p>
+
+        <p>
+            The application does not provide financial advice.
+        </p>
+
+    </section>
+
+
+    <!-- No Health -->
+
+    <section class="card">
+
+        <h2>11. Not a Health or Medical Application</h2>
+
+        <p>
+            Flash Light is not a healthcare or medical application.
+        </p>
+
+        <p>
+            It does not provide medical diagnosis, treatment, health
+            monitoring, medical advice or healthcare services.
+        </p>
+
+    </section>
+
+
+    <!-- Continuous Improvement -->
+
+    <section class="card">
+
+        <h2>12. Continuous Improvement</h2>
+
+        <p>
+            We may continue to improve Flash Light by fixing bugs,
+            improving performance, enhancing compatibility and introducing
+            useful features.
+        </p>
+
+        <p>
+            Application features may change over time as Android technology,
+            device hardware and third-party services evolve.
+        </p>
+
+        <p>
+            We appreciate user feedback because it helps us understand
+            how the application can be improved.
+        </p>
+
+    </section>
+
+
+    <!-- Developer -->
+
+    <section class="card">
+
+        <h2>13. About the Developer</h2>
+
+        <p>
+            Flash Light is developed and maintained by
+            <strong>Dillip Kumar Soren</strong>.
+        </p>
+
+        <p>
+            The application is independently developed with the goal of
+            providing useful and straightforward mobile utility software.
+        </p>
+
+        <div class="details">
+
+            <div class="detail">
+
+                <strong>Developer</strong>
+
+                Dillip Kumar Soren
+
+            </div>
+
+
+            <div class="detail">
+
+                <strong>Application</strong>
+
+                Flash Light
+
+            </div>
+
+
+            <div class="detail">
+
+                <strong>Email</strong>
+
+                <a href="mailto:dillipsoren640@gmail.com">
+                    dillipsoren640@gmail.com
+                </a>
+
+            </div>
+
+
+            <div class="detail">
+
+                <strong>Phone</strong>
+
+                <a href="tel:+919438582096">
+                    +91 9438582096
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+
+    <section class="card">
+
+        <h2>14. Contact Us</h2>
+
+        <p>
+            We welcome questions, suggestions and feedback regarding
+            Flash Light.
+        </p>
+
+        <p>
+            If you experience a problem with the application or would
+            like to share feedback, please contact us using the information
+            below.
+        </p>
+
+        <div class="info-box">
+
+            <p>
+                <strong>Email:</strong><br>
+
+                <a href="mailto:dillipsoren640@gmail.com">
+                    dillipsoren640@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>Phone:</strong><br>
+
+                <a href="tel:+919438582096">
+                    +91 9438582096
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Useful Links -->
+
+    <section class="card">
+
+        <h2>15. Important Information</h2>
+
+        <p>
+            Before using Flash Light, users are encouraged to review the
+            application's Privacy Policy and Terms and Conditions.
+        </p>
+
+        <ul>
+
+            <li>
+                Privacy practices are described in the Privacy Policy.
+            </li>
+
+            <li>
+                Application usage rules are described in the Terms and
+                Conditions.
+            </li>
+
+            <li>
+                Important limitations and safety information are described
+                in the Disclaimer.
+            </li>
+
+        </ul>
+
+        <div class="success-box">
+
+            <strong>Thank You</strong>
+
+            <p>
+                Thank you for choosing Flash Light. We appreciate your
+                support and hope the application provides a convenient
+                flashlight experience.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Final -->
+
+    <section class="card">
+
+        <h2>16. Final Message</h2>
+
+        <p>
+            Flash Light was created with a simple idea: provide users
+            with a convenient way to access the flashlight functionality
+            of their Android device.
+        </p>
+
+        <p>
+            We aim to maintain a clean, useful and reliable application
+            while continuing to improve the user experience.
+        </p>
+
+        <p>
+            Thank you for using Flash Light and for supporting independent
+            application development.
+        </p>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        <strong>Flash Light</strong>
+    </p>
+
+    <p>
+        Developed by Dillip Kumar Soren
+    </p>
+
+    <p>
+        Email:
+        <a href="mailto:dillipsoren640@gmail.com">
+            dillipsoren640@gmail.com
+        </a>
+    </p>
+
+    <p>
+        Phone:
+        <a href="tel:+919438582096">
+            +91 9438582096
+        </a>
+    </p>
+
+    <p>
+        © <span id="year"></span> Dillip Kumar Soren. All rights reserved.
+    </p>
+
+</footer>
+
+
+<button
+    class="top-btn"
+    id="topButton"
+    onclick="scrollToTop()"
+    aria-label="Back to top">
+    ↑
+</button>
+
+
+<script>
+
+    // Automatically display current year
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+
+    // Show / hide back-to-top button
+    const topButton =
+        document.getElementById("topButton");
+
+
+    window.addEventListener("scroll", function () {
+
+        if (window.scrollY > 400) {
+
+            topButton.style.display = "block";
+
+        } else {
+
+            topButton.style.display = "none";
+
+        }
+
+    });
+
+
+    // Scroll to top
+    function scrollToTop() {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    }
+
+</script>
+
+</body>
+</html>
+```
