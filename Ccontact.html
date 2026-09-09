@@ -1,0 +1,1119 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact Flash Light support. Get in touch with Dillip Kumar Soren for questions, feedback, suggestions and technical support.">
+
+    <meta name="robots" content="index, follow">
+
+    <title>Flash Light - Contact Us</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #202124;
+            line-height: 1.75;
+        }
+
+        header {
+            background: linear-gradient(135deg, #111827, #2563eb);
+            color: #fff;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .app-icon {
+            width: 88px;
+            height: 88px;
+            margin: 0 auto 20px;
+            border-radius: 24px;
+            background: rgba(255,255,255,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 46px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 17px;
+            opacity: 0.93;
+        }
+
+        .container {
+            width: min(1000px, calc(100% - 30px));
+            margin: 35px auto;
+        }
+
+        .card {
+            background: #fff;
+            padding: 32px;
+            margin-bottom: 22px;
+            border-radius: 16px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.06);
+        }
+
+        .card h2 {
+            color: #1d4ed8;
+            font-size: 24px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .card h3 {
+            color: #374151;
+            font-size: 18px;
+            margin-top: 22px;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            margin-bottom: 14px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .contact-box {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            padding: 22px;
+            border-radius: 12px;
+            transition: 0.25s ease;
+        }
+
+        .contact-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+        }
+
+        .contact-icon {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: #1d4ed8;
+        }
+
+        .contact-box a {
+            word-break: break-word;
+        }
+
+        .info-box {
+            background: #eff6ff;
+            border-left: 5px solid #2563eb;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 18px 0;
+        }
+
+        .success-box {
+            background: #f0fdf4;
+            border-left: 5px solid #16a34a;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 18px 0;
+        }
+
+        .warning-box {
+            background: #fff7ed;
+            border-left: 5px solid #f97316;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 18px 0;
+        }
+
+        ul {
+            padding-left: 25px;
+            margin: 12px 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 7px;
+            color: #374151;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1px solid #d1d5db;
+            border-radius: 9px;
+            font-size: 15px;
+            font-family: inherit;
+            outline: none;
+            transition: 0.2s;
+            background: #fff;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37,99,235,0.10);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            border: none;
+            background: #2563eb;
+            color: #fff;
+            padding: 14px 26px;
+            border-radius: 9px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .submit-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+
+        .form-note {
+            font-size: 13px;
+            color: #6b7280;
+            margin-top: 12px;
+        }
+
+        .faq {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 15px 0;
+        }
+
+        .faq:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            font-weight: bold;
+            color: #1f2937;
+            position: relative;
+            padding-right: 30px;
+        }
+
+        .faq-question::after {
+            content: "+";
+            position: absolute;
+            right: 0;
+            font-size: 22px;
+            color: #2563eb;
+        }
+
+        .faq.active .faq-question::after {
+            content: "−";
+        }
+
+        .faq-answer {
+            display: none;
+            padding-top: 10px;
+            color: #4b5563;
+        }
+
+        .faq.active .faq-answer {
+            display: block;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #111827;
+            color: #d1d5db;
+            text-align: center;
+            padding: 38px 20px;
+            margin-top: 50px;
+        }
+
+        footer strong {
+            color: #fff;
+        }
+
+        .top-btn {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 46px;
+            height: 46px;
+            border: none;
+            border-radius: 50%;
+            background: #2563eb;
+            color: #fff;
+            font-size: 21px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            display: none;
+        }
+
+        .top-btn:hover {
+            background: #1d4ed8;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 55px 18px;
+            }
+
+            header h1 {
+                font-size: 31px;
+            }
+
+            .card {
+                padding: 22px;
+            }
+
+            .card h2 {
+                font-size: 21px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+<header>
+
+    <div class="app-icon">🔦</div>
+
+    <h1>Flash Light</h1>
+
+    <p>Contact Us</p>
+
+    <p>We are happy to hear from you</p>
+
+</header>
+
+
+<main class="container">
+
+
+    <!-- Introduction -->
+
+    <section class="card">
+
+        <h2>1. Contact Flash Light Support</h2>
+
+        <p>
+            Thank you for using <strong>Flash Light</strong>.
+            We value your feedback, suggestions and questions.
+        </p>
+
+        <p>
+            If you are experiencing a problem with the application,
+            have a question about its features, or would like to share
+            a suggestion, you can contact us using the information
+            provided on this page.
+        </p>
+
+        <p>
+            Our goal is to provide a useful, simple and convenient
+            flashlight experience for Android users.
+        </p>
+
+        <div class="success-box">
+
+            <strong>Need Help?</strong>
+
+            <p>
+                For the fastest response, please send a detailed
+                description of your issue by email and, where useful,
+                include your Android device model and Android version.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Information -->
+
+    <section class="card">
+
+        <h2>2. Contact Information</h2>
+
+        <p>
+            You can contact the developer directly using the following
+            information:
+        </p>
+
+        <div class="contact-grid">
+
+            <div class="contact-box">
+
+                <div class="contact-icon">📧</div>
+
+                <h3>Email Support</h3>
+
+                <p>
+                    For general questions, technical support, feedback
+                    and privacy-related inquiries.
+                </p>
+
+                <a href="mailto:dillipsoren640@gmail.com">
+                    dillipsoren640@gmail.com
+                </a>
+
+            </div>
+
+
+            <div class="contact-box">
+
+                <div class="contact-icon">📞</div>
+
+                <h3>Phone Support</h3>
+
+                <p>
+                    You may contact the developer by phone for
+                    application-related questions.
+                </p>
+
+                <a href="tel:+919438582096">
+                    +91 9438582096
+                </a>
+
+            </div>
+
+
+            <div class="contact-box">
+
+                <div class="contact-icon">👨‍💻</div>
+
+                <h3>Developer</h3>
+
+                <p>
+                    Flash Light is developed and maintained by:
+                </p>
+
+                <strong>Dillip Kumar Soren</strong>
+
+            </div>
+
+
+            <div class="contact-box">
+
+                <div class="contact-icon">🔦</div>
+
+                <h3>Application</h3>
+
+                <p>
+                    Application name:
+                </p>
+
+                <strong>Flash Light</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Email Support -->
+
+    <section class="card">
+
+        <h2>3. Email Support</h2>
+
+        <p>
+            Email is the preferred method of communication for detailed
+            support requests.
+        </p>
+
+        <p>
+            When contacting us, please provide enough information for us
+            to understand the problem.
+        </p>
+
+        <h3>Useful Information to Include</h3>
+
+        <ul>
+
+            <li>Your Android device model.</li>
+
+            <li>Your Android version, if known.</li>
+
+            <li>A description of the problem.</li>
+
+            <li>The steps that caused or reproduced the problem.</li>
+
+            <li>The Flash Light feature you were using.</li>
+
+            <li>Any relevant error message.</li>
+
+        </ul>
+
+        <div class="info-box">
+
+            <strong>Support Email:</strong><br>
+
+            <a href="mailto:dillipsoren640@gmail.com">
+                dillipsoren640@gmail.com
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Feedback -->
+
+    <section class="card">
+
+        <h2>4. Feedback and Suggestions</h2>
+
+        <p>
+            We appreciate feedback from users because it helps us
+            understand how Flash Light can be improved.
+        </p>
+
+        <p>
+            You can send suggestions about application design,
+            usability, performance, flashlight controls or other
+            useful features.
+        </p>
+
+        <h3>Examples of Helpful Feedback</h3>
+
+        <ul>
+
+            <li>Suggestions for improving the user interface.</li>
+
+            <li>Suggestions for useful flashlight features.</li>
+
+            <li>Reports about device compatibility.</li>
+
+            <li>Performance-related feedback.</li>
+
+            <li>Suggestions for improving accessibility.</li>
+
+            <li>Reports about unexpected application behavior.</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- Technical Support -->
+
+    <section class="card">
+
+        <h2>5. Technical Support</h2>
+
+        <p>
+            Flash Light uses the flashlight functionality available
+            on compatible Android devices.
+        </p>
+
+        <p>
+            If the flashlight does not work correctly, the problem may
+            sometimes be related to device hardware, Android version,
+            manufacturer software or device-specific limitations.
+        </p>
+
+        <p>
+            We will make reasonable efforts to understand reported
+            issues and improve compatibility where technically possible.
+        </p>
+
+        <div class="warning-box">
+
+            <strong>Device Compatibility Notice:</strong>
+
+            <p>
+                Not every flashlight feature is guaranteed to work on
+                every Android device because different devices can have
+                different hardware and software implementations.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Privacy Questions -->
+
+    <section class="card">
+
+        <h2>6. Privacy Questions</h2>
+
+        <p>
+            If you have a question about privacy, permissions,
+            advertising or information handling, please contact us
+            using the email address below.
+        </p>
+
+        <p>
+            Flash Light does not require users to create an account
+            or log in.
+        </p>
+
+        <p>
+            The application may use Google AdMob for advertisements.
+            Information that may be processed by third-party advertising
+            services is described in our Privacy Policy.
+        </p>
+
+        <div class="info-box">
+
+            <strong>Privacy Contact:</strong><br>
+
+            <a href="mailto:dillipsoren640@gmail.com">
+                dillipsoren640@gmail.com
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Form -->
+
+    <section class="card">
+
+        <h2>7. Send Us a Message</h2>
+
+        <p>
+            You can use the form below to prepare an email message.
+            When you submit the form, your device's email application
+            will open with the message details.
+        </p>
+
+        <form id="contactForm">
+
+            <div class="form-group">
+
+                <label for="name">
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Your Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="subject">
+                    Subject
+                </label>
+
+                <select id="subject" name="subject">
+
+                    <option value="General Inquiry">
+                        General Inquiry
+                    </option>
+
+                    <option value="Technical Support">
+                        Technical Support
+                    </option>
+
+                    <option value="Bug Report">
+                        Bug Report
+                    </option>
+
+                    <option value="Feedback">
+                        Feedback
+                    </option>
+
+                    <option value="Feature Request">
+                        Feature Request
+                    </option>
+
+                    <option value="Privacy Question">
+                        Privacy Question
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">
+                    Your Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Describe your question or issue..."
+                    required></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="submit-btn">
+                Send Message
+            </button>
+
+            <p class="form-note">
+                This form opens your default email application.
+                Your message is not stored by this webpage.
+            </p>
+
+        </form>
+
+    </section>
+
+
+    <!-- Response Information -->
+
+    <section class="card">
+
+        <h2>8. Response Information</h2>
+
+        <p>
+            We try to review legitimate application-related questions
+            and feedback as reasonably possible.
+        </p>
+
+        <p>
+            Response times may vary depending on the nature of the
+            request, the volume of messages and availability of the
+            developer.
+        </p>
+
+        <p>
+            Please avoid sending passwords, banking information,
+            government identification numbers or other sensitive
+            personal information in support emails.
+        </p>
+
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section class="card">
+
+        <h2>9. Frequently Asked Questions</h2>
+
+
+        <div class="faq">
+
+            <div class="faq-question">
+                Does Flash Light require login?
+            </div>
+
+            <div class="faq-answer">
+
+                <p>
+                    No. Flash Light does not require users to create
+                    an account or log in to use its basic functionality.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq">
+
+            <div class="faq-question">
+                Why is flashlight not working on my device?
+            </div>
+
+            <div class="faq-answer">
+
+                <p>
+                    Flashlight functionality depends on your device's
+                    hardware, Android version and manufacturer software.
+                    Some devices may not support all flashlight features.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq">
+
+            <div class="faq-question">
+                Does the app display advertisements?
+            </div>
+
+            <div class="faq-answer">
+
+                <p>
+                    Flash Light may display advertisements through
+                    Google AdMob.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq">
+
+            <div class="faq-question">
+                Is Flash Light a government application?
+            </div>
+
+            <div class="faq-answer">
+
+                <p>
+                    No. Flash Light is an independently developed
+                    application and is not affiliated with any
+                    government organization.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq">
+
+            <div class="faq-question">
+                Is Flash Light a financial or medical application?
+            </div>
+
+            <div class="faq-answer">
+
+                <p>
+                    No. Flash Light is a general-purpose flashlight
+                    utility and does not provide financial or medical
+                    services.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq">
+
+            <div class="faq-question">
+                How can I contact the developer?
+            </div>
+
+            <div class="faq-answer">
+
+                <p>
+                    You can contact Dillip Kumar Soren by email at
+                    <a href="mailto:dillipsoren640@gmail.com">
+                        dillipsoren640@gmail.com
+                    </a>
+                    or by phone at
+                    <a href="tel:+919438582096">
+                        +91 9438582096
+                    </a>.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Developer Information -->
+
+    <section class="card">
+
+        <h2>10. Developer Information</h2>
+
+        <div class="contact-grid">
+
+            <div class="contact-box">
+
+                <h3>Developer Name</h3>
+
+                <p>
+                    Dillip Kumar Soren
+                </p>
+
+            </div>
+
+
+            <div class="contact-box">
+
+                <h3>Application Name</h3>
+
+                <p>
+                    Flash Light
+                </p>
+
+            </div>
+
+
+            <div class="contact-box">
+
+                <h3>Email Address</h3>
+
+                <p>
+                    <a href="mailto:dillipsoren640@gmail.com">
+                        dillipsoren640@gmail.com
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div class="contact-box">
+
+                <h3>Phone Number</h3>
+
+                <p>
+                    <a href="tel:+919438582096">
+                        +91 9438582096
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Final -->
+
+    <section class="card">
+
+        <h2>11. Thank You</h2>
+
+        <div class="success-box">
+
+            <p>
+                Thank you for using Flash Light and for taking the
+                time to contact us.
+            </p>
+
+            <p>
+                Your feedback and suggestions are valuable and help
+                us continue improving the application.
+            </p>
+
+            <p>
+                We appreciate your support.
+            </p>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        <strong>Flash Light</strong>
+    </p>
+
+    <p>
+        Developed by Dillip Kumar Soren
+    </p>
+
+    <p>
+        Email:
+        <a href="mailto:dillipsoren640@gmail.com">
+            dillipsoren640@gmail.com
+        </a>
+    </p>
+
+    <p>
+        Phone:
+        <a href="tel:+919438582096">
+            +91 9438582096
+        </a>
+    </p>
+
+    <p>
+        © <span id="year"></span> Dillip Kumar Soren.
+        All rights reserved.
+    </p>
+
+</footer>
+
+
+<button
+    class="top-btn"
+    id="topButton"
+    onclick="scrollToTop()"
+    aria-label="Back to top">
+    ↑
+</button>
+
+
+<script>
+
+    // Current year
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+
+    // Contact form
+    document.getElementById("contactForm")
+        .addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const name =
+                document.getElementById("name").value.trim();
+
+            const email =
+                document.getElementById("email").value.trim();
+
+            const subject =
+                document.getElementById("subject").value;
+
+            const message =
+                document.getElementById("message").value.trim();
+
+
+            const emailBody =
+                "Name: " + name +
+                "\nEmail: " + email +
+                "\n\nMessage:\n" + message;
+
+
+            const mailto =
+                "mailto:dillipsoren640@gmail.com" +
+                "?subject=" +
+                encodeURIComponent(subject) +
+                "&body=" +
+                encodeURIComponent(emailBody);
+
+
+            window.location.href = mailto;
+
+        });
+
+
+    // FAQ accordion
+    document.querySelectorAll(".faq-question")
+        .forEach(function(question) {
+
+            question.addEventListener("click", function() {
+
+                const faq =
+                    this.parentElement;
+
+                faq.classList.toggle("active");
+
+            });
+
+        });
+
+
+    // Back to top button
+    const topButton =
+        document.getElementById("topButton");
+
+
+    window.addEventListener("scroll", function() {
+
+        if (window.scrollY > 400) {
+
+            topButton.style.display = "block";
+
+        } else {
+
+            topButton.style.display = "none";
+
+        }
+
+    });
+
+
+    // Scroll to top
+    function scrollToTop() {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    }
+
+</script>
+
+</body>
+</html>
+```
