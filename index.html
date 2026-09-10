@@ -662,6 +662,75 @@
     }
 
     /* =========================
+       LEGAL / INFORMATION
+    ========================= */
+
+    .legal-section {
+      background: #07111f;
+    }
+
+    .legal-card {
+      margin-bottom: 22px;
+      padding: 34px;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,0.09);
+      background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.055),
+        rgba(255,255,255,0.025)
+      );
+      scroll-margin-top: 95px;
+    }
+
+    .legal-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      background: rgba(255,211,78,0.10);
+      font-size: 25px;
+      margin-bottom: 18px;
+    }
+
+    .legal-card h2 {
+      font-size: 27px;
+      margin-bottom: 10px;
+    }
+
+    .legal-card h3 {
+      color: #ffd34e;
+      font-size: 17px;
+      margin: 26px 0 9px;
+    }
+
+    .legal-card p,
+    .legal-card li {
+      color: #aab7c6;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .legal-card ul {
+      padding-left: 20px;
+      margin: 12px 0;
+    }
+
+    .legal-card li {
+      margin-bottom: 7px;
+    }
+
+    .last-updated {
+      color: #8291a2 !important;
+      font-size: 13px !important;
+    }
+
+    .contact-note {
+      color: #ffd34e !important;
+      font-size: 13px !important;
+    }
+
+    /* =========================
        RESPONSIVE
     ========================= */
 
@@ -778,6 +847,7 @@
         <a href="#features">Features</a>
         <a href="#about">About</a>
         <a href="#faq">FAQ</a>
+        <a href="#information">Rules</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -1083,10 +1153,10 @@
           <p>
             For questions, feedback, privacy-related
             requests or technical support, please contact us
-            using the Contact Us page.
+            using the Contact Us section on this page.
           </p>
 
-          <a href="contact.html"
+          <a href="#contact"
              class="btn btn-primary">
             Contact Developer
           </a>
@@ -1099,107 +1169,301 @@
 
 
     <!-- =========================
-         IMPORTANT LINKS
+         IMPORTANT INFORMATION
     ========================== -->
 
-    <section class="links-section">
+    <section class="links-section" id="information">
 
       <div class="container">
 
         <div class="section-heading">
-
-          <div class="small">
-            Information
-          </div>
-
-          <h2>
-            Important Information
-          </h2>
-
-          <p>
-            Read our policies and terms before using
-            the application.
-          </p>
-
+          <div class="small">Information</div>
+          <h2>Important Information</h2>
+          <p>All app policies, rules and developer information are available on this single page.</p>
         </div>
-
 
         <div class="links-grid">
 
-          <a href="privacy-policy.html"
-             class="link-card">
-
-            <div class="icon">
-              🔐
-            </div>
-
-            <h3>
-              Privacy Policy
-            </h3>
-
-            <p>
-              Learn how information and advertising
-              services may be handled.
-            </p>
-
+          <a href="#privacy" class="link-card">
+            <div class="icon">🔐</div>
+            <h3>Privacy Policy</h3>
+            <p>How advertising and app-related information may be handled.</p>
           </a>
 
-
-          <a href="terms-and-conditions.html"
-             class="link-card">
-
-            <div class="icon">
-              📄
-            </div>
-
-            <h3>
-              Terms & Conditions
-            </h3>
-
-            <p>
-              Rules and conditions for using the app.
-            </p>
-
+          <a href="#terms" class="link-card">
+            <div class="icon">📄</div>
+            <h3>Terms & Conditions</h3>
+            <p>Rules and conditions for using Flash Light.</p>
           </a>
 
-
-          <a href="disclaimer.html"
-             class="link-card">
-
-            <div class="icon">
-              ⚠️
-            </div>
-
-            <h3>
-              Disclaimer
-            </h3>
-
-            <p>
-              Important information about app usage
-              and limitations.
-            </p>
-
+          <a href="#disclaimer" class="link-card">
+            <div class="icon">⚠️</div>
+            <h3>Disclaimer</h3>
+            <p>Important information about usage and limitations.</p>
           </a>
 
-
-          <a href="contact.html"
-             class="link-card">
-
-            <div class="icon">
-              ✉️
-            </div>
-
-            <h3>
-              Contact Us
-            </h3>
-
-            <p>
-              Contact the developer for support
-              or feedback.
-            </p>
-
+          <a href="#contact" class="link-card">
+            <div class="icon">✉️</div>
+            <h3>Contact Us</h3>
+            <p>Contact the developer for support or feedback.</p>
           </a>
 
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         LEGAL & APP INFORMATION
+    ========================== -->
+
+    <section id="legal" class="legal-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="small">Legal & Safety</div>
+          <h2>App Rules & Information</h2>
+          <p>Everything you need to know about Flash Light is provided below on this single page.</p>
+        </div>
+
+        <div class="legal-card" id="privacy">
+          <div class="legal-icon">🔐</div>
+          <h2>Privacy Policy</h2>
+          <p class="last-updated"><strong>Last Updated:</strong> September 10, 2026</p>
+
+          <h3>1. Introduction</h3>
+          <p>Flash Light, developed by <strong>Dillip Kumar Soren</strong>, is designed to provide simple and convenient flashlight functionality on compatible Android devices. We respect your privacy and aim to be transparent about how the application and its third-party services may process information.</p>
+
+          <h3>2. Information Collection</h3>
+          <p>The basic flashlight functionality does not require you to create an account or provide your name, address, contacts, photos, or other personal information directly to the developer.</p>
+
+          <h3>3. Device & Technical Information</h3>
+          <p>Depending on the Android operating system, device configuration, advertising services, and app functionality, technical information may be processed by the app or third-party services. This may include device-related information, IP address, diagnostic information, advertising identifiers, and information about advertising interactions.</p>
+
+          <h3>4. Camera / Flashlight Permission</h3>
+          <p>Android may require camera-related permission for operating the device's camera flash/torch hardware. This permission is used for flashlight functionality where required by the device and Android version. The app does not use the permission to take or store photos or videos unless such functionality is separately introduced.</p>
+
+          <h3>5. Advertising & Google AdMob</h3>
+          <p>The application may display banner advertisements provided by third-party advertising services such as <strong>Google AdMob</strong>. Google and its advertising partners may process information such as advertising identifiers, device information, IP address, ad impressions, and interactions in accordance with their policies, applicable consent requirements, regional rules, and user settings.</p>
+
+          <p>Advertising may be personalized or non-personalized depending on your location, consent choices, device settings, Google settings, and applicable requirements. The developer does not control all information processed by third-party advertising providers.</p>
+
+          <h3>6. Third-Party Services</h3>
+          <p>Third-party services may have their own privacy policies and terms. You should review the applicable policies of Google AdMob and other services used by the application.</p>
+
+          <h3>7. Data Sharing</h3>
+          <p>The developer does not sell your personal information. Information may nevertheless be processed by third-party service providers when necessary for advertising, security, analytics, app operation, or other legitimate purposes, subject to their applicable policies.</p>
+
+          <h3>8. Cookies & Similar Technologies</h3>
+          <p>Third-party advertising services may use cookies, mobile identifiers, SDK technologies, or similar technologies to provide and measure advertising and related services.</p>
+
+          <h3>9. Data Security</h3>
+          <p>Reasonable measures may be used to protect information handled by the developer. However, no electronic transmission or storage system can be guaranteed to be completely secure.</p>
+
+          <h3>10. Children's Privacy</h3>
+          <p>The application is not designed to knowingly collect personal information directly from children. If you believe personal information has been submitted to the developer inappropriately, please contact us.</p>
+
+          <h3>11. Your Privacy Choices</h3>
+          <p>You may have choices regarding personalized advertising, advertising identifiers, permissions, and other privacy settings through your Android device and Google services, depending on your region and available settings.</p>
+
+          <h3>12. Changes to this Policy</h3>
+          <p>This Privacy Policy may be updated when the application, advertising services, legal requirements, or practices change. The updated version will be published on this page with a revised date.</p>
+        </div>
+
+
+        <div class="legal-card" id="terms">
+          <div class="legal-icon">📄</div>
+          <h2>Terms & Conditions</h2>
+          <p class="last-updated"><strong>Last Updated:</strong> September 10, 2026</p>
+
+          <h3>1. Acceptance of Terms</h3>
+          <p>By installing, accessing, or using Flash Light, you agree to these Terms & Conditions. If you do not agree, please do not use the application.</p>
+
+          <h3>2. Application Use</h3>
+          <p>Flash Light is intended to provide flashlight and related utility features on compatible Android devices. You agree to use the application lawfully and responsibly.</p>
+
+          <h3>3. Permissions</h3>
+          <p>The application should request only permissions required for its implemented features. Flashlight operation may require camera/flash-related permission depending on Android and device requirements.</p>
+
+          <h3>4. Brightness Control</h3>
+          <p>Where supported by the device, flashlight intensity may be adjustable. Values such as 25%, 50%, and 100% are controls representing levels supported by the device. <strong>100% means the maximum supported torch intensity; it does not guarantee identical physical brightness on every device.</strong></p>
+
+          <h3>5. Device Compatibility</h3>
+          <p>Some Android devices support variable torch intensity while others support only basic ON/OFF operation. Availability of features depends on device hardware, Android version, manufacturer implementation, and system restrictions.</p>
+
+          <h3>6. Screen Flashlight</h3>
+          <p>If the application provides Screen Flashlight, it uses the phone display as a light source. Screen brightness and behavior may vary by device and Android version. Screen Flashlight may consume additional battery and may make the device warmer.</p>
+
+          <h3>7. Advertising</h3>
+          <p>The application may display advertisements through Google AdMob or other third-party advertising services. Advertising services are subject to their own policies and terms.</p>
+
+          <h3>8. Prohibited Use</h3>
+          <p>You must not use the application for unlawful activities, harassment, dangerous activities, or in any manner that may cause harm to yourself, another person, or property.</p>
+
+          <h3>9. Intellectual Property</h3>
+          <p>The application, its original branding, interface, text, and related content are protected by applicable intellectual-property laws unless otherwise stated.</p>
+
+          <h3>10. Updates & Changes</h3>
+          <p>Features, design, compatibility, advertising, and other parts of the application may be changed, updated, suspended, or discontinued without prior notice where reasonably necessary.</p>
+
+          <h3>11. No Warranty</h3>
+          <p>The application is provided on an as-available basis. No guarantee is made that every feature will work on every Android device or that the application will always be available without interruption or errors.</p>
+
+          <h3>12. Limitation of Liability</h3>
+          <p>To the maximum extent permitted by applicable law, the developer is not responsible for damage, loss, injury, battery consumption, device heating, or other consequences arising from improper use or limitations of the application.</p>
+        </div>
+
+
+        <div class="legal-card" id="disclaimer">
+          <div class="legal-icon">⚠️</div>
+          <h2>Disclaimer</h2>
+          <p class="last-updated"><strong>Last Updated:</strong> September 10, 2026</p>
+
+          <h3>General Disclaimer</h3>
+          <p>Flash Light is a utility application. Its performance depends on the hardware, firmware, Android version, and manufacturer implementation of your device.</p>
+
+          <h3>Flashlight Limitations</h3>
+          <p>Actual flashlight brightness can vary between devices. Variable brightness may not be available on devices that do not support torch-strength control.</p>
+
+          <h3>Battery & Heating</h3>
+          <p>Continuous flashlight or screen-light use can increase battery consumption and may cause the device to become warm. Stop using the feature if the device becomes excessively hot.</p>
+
+          <h3>Safety Warning</h3>
+          <ul>
+            <li>Do not look directly into a bright LED flashlight.</li>
+            <li>Do not point the flashlight directly into another person's eyes.</li>
+            <li>Do not use the flashlight in a way that creates a safety hazard.</li>
+            <li>Do not use the application irresponsibly while driving or operating machinery.</li>
+            <li>Keep unsafe or excessively bright light away from children.</li>
+          </ul>
+
+          <h3>Screen Flashlight</h3>
+          <p>Screen Flashlight uses the display as a light source. High display brightness can increase battery consumption and may contribute to device warmth.</p>
+
+          <h3>Advertising Disclaimer</h3>
+          <p>Advertisements may be supplied by third-party services such as Google AdMob. The developer does not endorse every advertisement displayed by third-party advertising providers.</p>
+
+          <h3>Accuracy</h3>
+          <p>Information on this website is provided for general informational purposes and may be updated as the application changes.</p>
+        </div>
+
+
+        <div class="legal-card" id="advertising">
+          <div class="legal-icon">📢</div>
+          <h2>Advertising & Google AdMob</h2>
+
+          <p>Flash Light may display banner advertisements using Google AdMob.</p>
+
+          <ul>
+            <li>Ads may be personalized or non-personalized depending on consent, region, and available settings.</li>
+            <li>Google AdMob may process advertising identifiers and other device or advertising-related information.</li>
+            <li>Ad impressions and interactions may be processed for advertising, measurement, fraud prevention, and related services.</li>
+            <li>Third-party advertising providers operate under their own privacy policies.</li>
+            <li>Users can manage available advertising and privacy choices through Android and Google settings where applicable.</li>
+          </ul>
+        </div>
+
+
+        <div class="legal-card" id="permissions">
+          <div class="legal-icon">🔑</div>
+          <h2>App Permissions</h2>
+
+          <h3>Camera / Flash Permission</h3>
+          <p>The permission may be required by Android to control the device's LED flashlight. It is used for the flashlight feature where required.</p>
+
+          <p>The application should not request unrelated permissions such as Contacts, Location, Microphone, SMS, Phone, or Storage unless those features are actually implemented.</p>
+        </div>
+
+
+        <div class="legal-card" id="safety">
+          <div class="legal-icon">🛡️</div>
+          <h2>Flashlight Safety Rules</h2>
+
+          <ul>
+            <li>Never look directly into a powerful flashlight.</li>
+            <li>Never shine bright light directly into another person's eyes.</li>
+            <li>Avoid using bright light where it could distract drivers or create danger.</li>
+            <li>Extended flashlight use can consume significant battery power.</li>
+            <li>Extended use may increase device temperature.</li>
+            <li>Stop using the flashlight if the device becomes excessively hot.</li>
+            <li>Use the application responsibly and according to local laws and safety requirements.</li>
+          </ul>
+        </div>
+
+
+        <div class="legal-card" id="brightness">
+          <div class="legal-icon">🎛️</div>
+          <h2>Brightness Control</h2>
+
+          <p>Brightness control depends on Android device hardware and system support.</p>
+
+          <ul>
+            <li><strong>25%:</strong> Lower supported torch intensity where available.</li>
+            <li><strong>50%:</strong> Medium supported torch intensity where available.</li>
+            <li><strong>100%:</strong> Maximum supported torch intensity.</li>
+          </ul>
+
+          <p>These percentage values are logical control levels and do not represent a guaranteed measurement of physical light output such as lumens.</p>
+        </div>
+
+
+        <div class="legal-card" id="screen">
+          <div class="legal-icon">📱</div>
+          <h2>Screen Flashlight</h2>
+
+          <p>When available, Screen Flashlight uses the phone's display as a light source.</p>
+
+          <ul>
+            <li>Maximum display brightness varies by device.</li>
+            <li>Screen Flashlight may consume additional battery.</li>
+            <li>High brightness may cause the display or device to become warm.</li>
+            <li>Users should avoid prolonged use at maximum brightness.</li>
+            <li>The application may restore the previous screen brightness when supported by its implementation.</li>
+          </ul>
+        </div>
+
+
+        <div class="legal-card" id="about">
+          <div class="legal-icon">🔦</div>
+          <h2>About Flash Light</h2>
+
+          <p><strong>Developer:</strong> Dillip Kumar Soren</p>
+          <p><strong>Application:</strong> Flash Light</p>
+          <p><strong>Last Updated:</strong> September 10, 2026</p>
+
+          <p>Flash Light is a simple Android utility application designed to provide quick access to compatible device flashlight and screen-light functionality.</p>
+
+          <ul>
+            <li>Quick Flashlight</li>
+            <li>ON/OFF control</li>
+            <li>Brightness control where supported</li>
+            <li>25% / 50% / 100% levels where supported</li>
+            <li>Maximum supported brightness</li>
+            <li>Screen Flashlight where available</li>
+            <li>Simple and easy-to-use interface</li>
+            <li>No account required for basic functionality</li>
+          </ul>
+        </div>
+
+
+        <div class="legal-card" id="contact">
+          <div class="legal-icon">✉️</div>
+          <h2>Contact Us</h2>
+
+          <p><strong>Developer:</strong> Dillip Kumar Soren</p>
+
+          <p>For technical support, bug reports, feedback, privacy questions, or general questions, please contact the developer.</p>
+
+          <p class="contact-note">
+            Replace the placeholder email below with your real support email before publishing.
+          </p>
+
+          <a href="mailto:support@example.com" class="btn btn-primary">
+            ✉ Send Email
+          </a>
         </div>
 
       </div>
@@ -1338,7 +1602,7 @@
             Get in touch with the Flash Light developer.
           </p>
 
-          <a href="contact.html"
+          <a href="#contact"
              class="btn btn-primary">
             Contact Us
           </a>
@@ -1401,7 +1665,7 @@
               Features
             </a>
 
-            <a href="about-us.htmt">
+            <a href="#about">
               About
             </a>
 
@@ -1409,7 +1673,19 @@
               FAQ
             </a>
 
-            <a href="contact.html">
+            <a href="#privacy">
+              Privacy Policy
+            </a>
+
+            <a href="#terms">
+              Terms & Conditions
+            </a>
+
+            <a href="#disclaimer">
+              Disclaimer
+            </a>
+
+            <a href="#contact">
               Contact Us
             </a>
 
@@ -1430,7 +1706,7 @@
               Privacy Policy
             </a>
 
-            <a href="terms-and-conditions.html">
+            <a href="terms.html">
               Terms & Conditions
             </a>
 
